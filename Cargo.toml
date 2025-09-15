@@ -8,7 +8,7 @@ repository = "https://github.com/ReimaoHenrique/rust-studio"
 homepage = "https://henriquereimao.dev/rust-studio"
 documentation = "https://docs.rs/rust-studio"
 license = "Apache-2.0"
-keywords = ["rust", "database", "web", "gui", "backend", "interface"]
+keywords = ["rust", "database", "web", "gui", "interface"]
 
 
 [dependencies]
