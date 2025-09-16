@@ -1,17 +1,28 @@
-use axum::Router;
-use tower_http::services::ServeDir;
-use std::net::SocketAddr;
+use clap::Parser;
+mod cli;
+
+#[derive(Parser)]
+#[command(name = "cargo-rust-studio")]
+#[command(about = "Rust database client with web interface", version = "0.1.0")]
+struct Cli {
+    #[arg(skip)]
+    _cargo_subcommand: Option<String>,
+    
+    #[command(subcommand)]
+    command: Option<cli::Commands>,
+}
 
 #[tokio::main]
 async fn main() {
-    // Configura o router para servir arquivos estáticos do frontend/dist
-    let app = Router::new().fallback_service(ServeDir::new("src/frontend/dist"));
+    let mut args: Vec<String> = std::env::args().collect();
+    if args.len() > 1 && args[1] == "rust-studio" {
+        args.remove(1);
+    }
+    
+    let cli = Cli::parse_from(args);
 
-    // Endereço do servidor
-    let addr = SocketAddr::from(([0, 0, 0, 0], 5555));
-    println!("Servidor rodando em http://{}", addr);
-
-    // Rodar o servidor usando tokio e axum
-    let listener = tokio::net::TcpListener::bind(addr).await.unwrap();
-    axum::serve(listener, app).await.unwrap();
+    match cli.command {
+        Some(cli::Commands::Run) => cli::run::run_server().await,
+        Some(cli::Commands::Help) | None => cli::help::print_help(),
+    }
 }

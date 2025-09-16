@@ -2,7 +2,7 @@
 name = "rust-studio"
 version = "0.1.0"
 authors = ["Henrique Reimão <seuemail@example.com>"]
-edition = "2024"
+edition = "2021"
 description = "Rust database client with a user-friendly web interface. Connects to any database via environment variables and allows easy data management through a modern web interface."
 repository = "https://github.com/ReimaoHenrique/rust-studio"
 homepage = "https://henriquereimao.dev/rust-studio"
@@ -16,3 +16,8 @@ axum = "0.8.4"
 tokio = { version = "1", features = ["full"] }
 tower = "0.5"
 tower-http = { version = "0.6", features = ["fs"] }
+clap = { version = "4.0", features = ["derive"] }
+
+[[bin]]
+name = "cargo-rust-studio"  
+path = "src/main.rs"
