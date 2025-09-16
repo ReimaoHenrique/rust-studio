@@ -1,8 +1,8 @@
 [package]
 name = "rust-studio"
-version = "0.1.1"
-authors = ["Henrique Reimão <seuemail@example.com>"]
-edition = "2021"
+version = "0.1.2"
+authors = ["Henrique Reimão <henriquereimao@outlook.com>"]
+edition = "2024"
 description = "Rust database client with a user-friendly web interface. Connects to any database via environment variables and allows easy data management through a modern web interface."
 repository = "https://github.com/ReimaoHenrique/rust-studio"
 homepage = "https://henriquereimao.dev/rust-studio"

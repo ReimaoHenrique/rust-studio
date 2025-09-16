@@ -23,6 +23,7 @@ async fn main() {
 
     match cli.command {
         Some(cli::Commands::Run) => cli::run::run_server().await,
-        Some(cli::Commands::Help) | None => cli::help::print_help(),
+        Some(cli::Commands::Help) => cli::help::print_help(),
+        None => cli::help::print_help(),
     }
 }
