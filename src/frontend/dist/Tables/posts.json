@@ -1,0 +1,7 @@
+{
+  "posts": [
+    { "id": 1, "title": "React is awesome", "author": "Alice", "likes": 15 },
+    { "id": 2, "title": "Shadcn/ui guide", "author": "Bob", "likes": 30 },
+    { "id": 3, "title": "Vite for speed", "author": "Alice", "likes": 25 }
+  ]
+}

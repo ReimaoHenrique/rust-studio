@@ -62,10 +62,12 @@ This project is in **active development** and currently in alpha stage:
 - ✅ Basic web server functionality
 - ✅ Cargo subcommand integration
 - ✅ Static file serving
+- ✅ Web server functionality
 - 🚧 Database connectivity (planned)
 - 🚧 Query interface (planned)
 - 🚧 Schema visualization (planned)
 - 🚧 Data editing capabilities (planned)
+- 🚧 CLI table view (planned)
 
 ## 🤝 Contributing
 

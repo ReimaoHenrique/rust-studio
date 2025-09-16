@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Henrique",
+    "email": "henrique@admin.com",
+    "role": "Super Admin",
+    "permissions": "Full Access"
+  },
+  {
+    "id": 2,
+    "name": "Maria",
+    "email": "maria@admin.com",
+    "role": "Admin",
+    "permissions": "Limited Access"
+  }
+]

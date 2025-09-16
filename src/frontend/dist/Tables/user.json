@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Alice",
+    "email": "alice@user.com",
+    "role": "Regular User",
+    "status": "Active"
+  },
+  {
+    "id": 2,
+    "name": "Bob",
+    "email": "bob@user.com",
+    "role": "Premium User",
+    "status": "Active"
+  },
+  {
+    "id": 3,
+    "name": "Charlie",
+    "email": "charlie@user.com",
+    "role": "Regular User",
+    "status": "Inactive"
+  }
+]
